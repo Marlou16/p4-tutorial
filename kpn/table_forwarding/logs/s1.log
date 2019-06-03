@@ -1,0 +1,1564 @@
+Calling target program-options parser
+Adding interface s1-eth1 as port 1
+[07:35:54.089] [bmv2] [D] [thread 4572] Adding interface s1-eth1 as port 1
+Adding interface s1-eth2 as port 2
+[07:35:54.110] [bmv2] [D] [thread 4572] Adding interface s1-eth2 as port 2
+I0603 07:35:54.149223323    4572 server_builder.cc:247]      Synchronous server. Num CQs: 1, Min pollers: 1, Max Pollers: 2147483647, CQ timeout (msec): 1000
+Server listening on 0.0.0.0:50051
+Thrift server was started
+New connection
+P4Runtime SetForwardingPipelineConfig
+[07:35:55.664] [bmv2] [D] [thread 4598] Set default default entry for table 'MyIngress.forward': NoAction - 
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Processing packet received on port 1
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Parser 'parser': start
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.665] [bmv2] [T] [thread 4604] [0.0] [cxt 0] Bytes parsed: 0
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Parser 'parser': end
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.665] [bmv2] [T] [thread 4604] [0.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.665] [bmv2] [T] [thread 4604] [0.0] [cxt 0] Action NoAction
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.665] [bmv2] [D] [thread 4604] [0.0] [cxt 0] Egress port is 0
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Processing packet received on port 2
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Parser 'parser': start
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.665] [bmv2] [T] [thread 4604] [1.0] [cxt 0] Bytes parsed: 0
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Parser 'parser': end
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.665] [bmv2] [T] [thread 4604] [1.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.665] [bmv2] [T] [thread 4604] [1.0] [cxt 0] Action NoAction
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.665] [bmv2] [D] [thread 4604] [1.0] [cxt 0] Egress port is 0
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Processing packet received on port 1
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Parser 'parser': start
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.665] [bmv2] [T] [thread 4604] [2.0] [cxt 0] Bytes parsed: 0
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Parser 'parser': end
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.665] [bmv2] [T] [thread 4604] [2.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.665] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.666] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.665] [bmv2] [D] [thread 4605] [0.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.666] [bmv2] [D] [thread 4605] [0.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.666] [bmv2] [D] [thread 4605] [0.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.666] [bmv2] [D] [thread 4605] [0.0] [cxt 0] Deparser 'deparser': end
+P4Runtime Write
+[07:35:55.666] [bmv2] [D] [thread 4605] [1.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.666] [bmv2] [D] [thread 4605] [1.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.666] [bmv2] [D] [thread 4605] [1.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.666] [bmv2] [D] [thread 4605] [1.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.666] [bmv2] [D] [thread 4609] [0.0] [cxt 0] Transmitting packet of size 78 out of port 0
+[07:35:55.666] [bmv2] [D] [thread 4609] [1.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[07:35:55.666] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.666] [bmv2] [T] [thread 4604] [2.0] [cxt 0] Action NoAction
+[07:35:55.666] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.666] [bmv2] [D] [thread 4604] [2.0] [cxt 0] Egress port is 0
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Processing packet received on port 2
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Parser 'parser': start
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.666] [bmv2] [T] [thread 4604] [3.0] [cxt 0] Bytes parsed: 0
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Parser 'parser': end
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.666] [bmv2] [T] [thread 4604] [3.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.666] [bmv2] [T] [thread 4604] [3.0] [cxt 0] Action NoAction
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.666] [bmv2] [D] [thread 4604] [3.0] [cxt 0] Egress port is 0
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Processing packet received on port 1
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Parser 'parser': start
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.666] [bmv2] [T] [thread 4604] [4.0] [cxt 0] Bytes parsed: 0
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Parser 'parser': end
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.666] [bmv2] [T] [thread 4604] [4.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.666] [bmv2] [T] [thread 4604] [4.0] [cxt 0] Action NoAction
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.666] [bmv2] [D] [thread 4604] [4.0] [cxt 0] Egress port is 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Processing packet received on port 2
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Parser 'parser': start
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.667] [bmv2] [T] [thread 4604] [5.0] [cxt 0] Bytes parsed: 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Parser 'parser': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.667] [bmv2] [T] [thread 4604] [5.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.667] [bmv2] [T] [thread 4604] [5.0] [cxt 0] Action NoAction
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [5.0] [cxt 0] Egress port is 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Processing packet received on port 1
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Parser 'parser': start
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.667] [bmv2] [T] [thread 4604] [6.0] [cxt 0] Bytes parsed: 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Parser 'parser': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.667] [bmv2] [T] [thread 4604] [6.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.667] [bmv2] [T] [thread 4604] [6.0] [cxt 0] Action NoAction
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [6.0] [cxt 0] Egress port is 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Processing packet received on port 2
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Parser 'parser': start
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.667] [bmv2] [T] [thread 4604] [7.0] [cxt 0] Bytes parsed: 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Parser 'parser': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.667] [bmv2] [T] [thread 4604] [7.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.667] [bmv2] [T] [thread 4604] [7.0] [cxt 0] Action NoAction
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [7.0] [cxt 0] Egress port is 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Processing packet received on port 1
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Parser 'parser': start
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.667] [bmv2] [T] [thread 4604] [8.0] [cxt 0] Bytes parsed: 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Parser 'parser': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.667] [bmv2] [T] [thread 4604] [8.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Action entry is NoAction - 
+[07:35:55.667] [bmv2] [T] [thread 4604] [8.0] [cxt 0] Action NoAction
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [8.0] [cxt 0] Egress port is 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Processing packet received on port 2
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 33615889
+      action {
+        action {
+          action_id: 16805608
+        }
+      }
+      is_default_action: true
+    }
+  }
+}
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Parser 'parser': start
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.667] [bmv2] [T] [thread 4604] [9.0] [cxt 0] Bytes parsed: 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Parser 'parser': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.667] [bmv2] [T] [thread 4604] [9.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Action entry is MyIngress.drop - 
+[07:35:55.667] [bmv2] [T] [thread 4604] [9.0] [cxt 0] Action MyIngress.drop
+[07:35:55.667] [bmv2] [T] [thread 4604] [9.0] [cxt 0] static_forwarder_table.p4(27) Primitive mark_to_drop()
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Egress port is 511
+[07:35:55.667] [bmv2] [D] [thread 4604] [9.0] [cxt 0] Dropping packet at the end of ingress
+[07:35:55.667] [bmv2] [D] [thread 4598] Set default entry for table 'MyIngress.forward': MyIngress.drop - 
+[07:35:55.666] [bmv2] [D] [thread 4605] [2.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [2.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [2.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [2.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [3.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [3.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [3.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [3.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [4.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [4.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [4.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [4.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [5.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [5.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [5.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [5.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [6.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [6.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [6.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [6.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [7.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [7.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [7.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [7.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [8.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [8.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.668] [bmv2] [D] [thread 4605] [8.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.668] [bmv2] [D] [thread 4605] [8.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.668] [bmv2] [D] [thread 4609] [2.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[07:35:55.668] [bmv2] [D] [thread 4609] [3.0] [cxt 0] Transmitting packet of size 78 out of port 0
+[07:35:55.668] [bmv2] [D] [thread 4609] [4.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[07:35:55.668] [bmv2] [D] [thread 4609] [5.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[07:35:55.668] [bmv2] [D] [thread 4609] [6.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[07:35:55.668] [bmv2] [D] [thread 4609] [7.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[07:35:55.668] [bmv2] [D] [thread 4609] [8.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[07:35:55.667] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Processing packet received on port 1
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Parser 'parser': start
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.668] [bmv2] [T] [thread 4604] [10.0] [cxt 0] Bytes parsed: 0
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Parser 'parser': end
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.668] [bmv2] [T] [thread 4604] [10.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Action entry is MyIngress.drop - 
+[07:35:55.668] [bmv2] [T] [thread 4604] [10.0] [cxt 0] Action MyIngress.drop
+[07:35:55.668] [bmv2] [T] [thread 4604] [10.0] [cxt 0] static_forwarder_table.p4(27) Primitive mark_to_drop()
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Egress port is 511
+[07:35:55.668] [bmv2] [D] [thread 4604] [10.0] [cxt 0] Dropping packet at the end of ingress
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Processing packet received on port 2
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Parser 'parser': start
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.668] [bmv2] [T] [thread 4604] [11.0] [cxt 0] Bytes parsed: 0
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Parser 'parser': end
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.668] [bmv2] [T] [thread 4604] [11.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Action entry is MyIngress.drop - 
+[07:35:55.668] [bmv2] [T] [thread 4604] [11.0] [cxt 0] Action MyIngress.drop
+[07:35:55.668] [bmv2] [T] [thread 4604] [11.0] [cxt 0] static_forwarder_table.p4(27) Primitive mark_to_drop()
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Egress port is 511
+[07:35:55.668] [bmv2] [D] [thread 4604] [11.0] [cxt 0] Dropping packet at the end of ingress
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Processing packet received on port 1
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Parser 'parser': start
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.668] [bmv2] [T] [thread 4604] [12.0] [cxt 0] Bytes parsed: 0
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Parser 'parser': end
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.668] [bmv2] [T] [thread 4604] [12.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.668] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Action entry is MyIngress.drop - 
+[07:35:55.669] [bmv2] [T] [thread 4604] [12.0] [cxt 0] Action MyIngress.drop
+[07:35:55.669] [bmv2] [T] [thread 4604] [12.0] [cxt 0] static_forwarder_table.p4(27) Primitive mark_to_drop()
+[07:35:55.669] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.669] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Egress port is 511
+[07:35:55.669] [bmv2] [D] [thread 4604] [12.0] [cxt 0] Dropping packet at the end of ingress
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Processing packet received on port 2
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Parser 'parser': start
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.669] [bmv2] [T] [thread 4604] [13.0] [cxt 0] Bytes parsed: 0
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Parser 'parser': end
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.669] [bmv2] [T] [thread 4604] [13.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Table 'MyIngress.forward': miss
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Action entry is MyIngress.drop - 
+[07:35:55.669] [bmv2] [T] [thread 4604] [13.0] [cxt 0] Action MyIngress.drop
+[07:35:55.669] [bmv2] [T] [thread 4604] [13.0] [cxt 0] static_forwarder_table.p4(27) Primitive mark_to_drop()
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Egress port is 511
+[07:35:55.669] [bmv2] [D] [thread 4604] [13.0] [cxt 0] Dropping packet at the end of ingress
+P4Runtime Write
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 33615889
+      match {
+        field_id: 1
+        exact {
+          value: "\000\001"
+        }
+      }
+      action {
+        action {
+          action_id: 16820738
+          params {
+            param_id: 1
+            value: "\000\002"
+          }
+        }
+      }
+    }
+  }
+}
+[07:35:55.671] [bmv2] [D] [thread 4598] Entry 0 added to table 'MyIngress.forward'
+[07:35:55.671] [bmv2] [D] [thread 4598] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+P4Runtime Write
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    table_entry {
+      table_id: 33615889
+      match {
+        field_id: 1
+        exact {
+          value: "\000\002"
+        }
+      }
+      action {
+        action {
+          action_id: 16820738
+          params {
+            param_id: 1
+            value: "\000\001"
+          }
+        }
+      }
+    }
+  }
+}
+[07:35:55.673] [bmv2] [D] [thread 4598] Entry 1 added to table 'MyIngress.forward'
+[07:35:55.673] [bmv2] [D] [thread 4598] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+Connection removed
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Processing packet received on port 2
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Parser 'parser': start
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.753] [bmv2] [T] [thread 4604] [14.0] [cxt 0] Bytes parsed: 0
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Parser 'parser': end
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.753] [bmv2] [T] [thread 4604] [14.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:55.753] [bmv2] [T] [thread 4604] [14.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:55.753] [bmv2] [T] [thread 4604] [14.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.753] [bmv2] [D] [thread 4604] [14.0] [cxt 0] Egress port is 1
+[07:35:55.753] [bmv2] [D] [thread 4606] [14.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.754] [bmv2] [D] [thread 4606] [14.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.754] [bmv2] [D] [thread 4606] [14.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.754] [bmv2] [D] [thread 4606] [14.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.754] [bmv2] [D] [thread 4609] [14.0] [cxt 0] Transmitting packet of size 208 out of port 1
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Processing packet received on port 2
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Parser 'parser': start
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.759] [bmv2] [T] [thread 4604] [15.0] [cxt 0] Bytes parsed: 0
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Parser 'parser': end
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.759] [bmv2] [T] [thread 4604] [15.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:55.759] [bmv2] [T] [thread 4604] [15.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:55.759] [bmv2] [T] [thread 4604] [15.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.759] [bmv2] [D] [thread 4604] [15.0] [cxt 0] Egress port is 1
+[07:35:55.759] [bmv2] [D] [thread 4606] [15.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.759] [bmv2] [D] [thread 4606] [15.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.759] [bmv2] [D] [thread 4606] [15.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.759] [bmv2] [D] [thread 4606] [15.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.759] [bmv2] [D] [thread 4609] [15.0] [cxt 0] Transmitting packet of size 110 out of port 1
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Processing packet received on port 1
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Parser 'parser': start
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.761] [bmv2] [T] [thread 4604] [16.0] [cxt 0] Bytes parsed: 0
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Parser 'parser': end
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.761] [bmv2] [T] [thread 4604] [16.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:55.761] [bmv2] [T] [thread 4604] [16.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:55.761] [bmv2] [T] [thread 4604] [16.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.761] [bmv2] [D] [thread 4604] [16.0] [cxt 0] Egress port is 2
+[07:35:55.761] [bmv2] [D] [thread 4607] [16.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.761] [bmv2] [D] [thread 4607] [16.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.761] [bmv2] [D] [thread 4607] [16.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.761] [bmv2] [D] [thread 4607] [16.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.761] [bmv2] [D] [thread 4609] [16.0] [cxt 0] Transmitting packet of size 208 out of port 2
+[07:35:55.798] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Processing packet received on port 1
+[07:35:55.798] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Parser 'parser': start
+[07:35:55.798] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:55.798] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:55.798] [bmv2] [T] [thread 4604] [17.0] [cxt 0] Bytes parsed: 0
+[07:35:55.798] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Parser 'parser': end
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Pipeline 'ingress': start
+[07:35:55.799] [bmv2] [T] [thread 4604] [17.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:55.799] [bmv2] [T] [thread 4604] [17.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:55.799] [bmv2] [T] [thread 4604] [17.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Pipeline 'ingress': end
+[07:35:55.799] [bmv2] [D] [thread 4604] [17.0] [cxt 0] Egress port is 2
+[07:35:55.799] [bmv2] [D] [thread 4607] [17.0] [cxt 0] Pipeline 'egress': start
+[07:35:55.799] [bmv2] [D] [thread 4607] [17.0] [cxt 0] Pipeline 'egress': end
+[07:35:55.799] [bmv2] [D] [thread 4607] [17.0] [cxt 0] Deparser 'deparser': start
+[07:35:55.799] [bmv2] [D] [thread 4607] [17.0] [cxt 0] Deparser 'deparser': end
+[07:35:55.799] [bmv2] [D] [thread 4609] [17.0] [cxt 0] Transmitting packet of size 110 out of port 2
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Processing packet received on port 2
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Parser 'parser': start
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.000] [bmv2] [T] [thread 4604] [18.0] [cxt 0] Bytes parsed: 0
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Parser 'parser': end
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.000] [bmv2] [T] [thread 4604] [18.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:56.000] [bmv2] [T] [thread 4604] [18.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.000] [bmv2] [T] [thread 4604] [18.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.000] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.001] [bmv2] [D] [thread 4604] [18.0] [cxt 0] Egress port is 1
+[07:35:56.001] [bmv2] [D] [thread 4606] [18.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.001] [bmv2] [D] [thread 4606] [18.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.001] [bmv2] [D] [thread 4606] [18.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.001] [bmv2] [D] [thread 4606] [18.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.001] [bmv2] [D] [thread 4609] [18.0] [cxt 0] Transmitting packet of size 110 out of port 1
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Processing packet received on port 2
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Parser 'parser': start
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.010] [bmv2] [T] [thread 4604] [19.0] [cxt 0] Bytes parsed: 0
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Parser 'parser': end
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.010] [bmv2] [T] [thread 4604] [19.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.010] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:56.011] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:56.011] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:56.011] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:56.011] [bmv2] [T] [thread 4604] [19.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.011] [bmv2] [T] [thread 4604] [19.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.011] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.011] [bmv2] [D] [thread 4604] [19.0] [cxt 0] Egress port is 1
+[07:35:56.011] [bmv2] [D] [thread 4606] [19.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.011] [bmv2] [D] [thread 4606] [19.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.011] [bmv2] [D] [thread 4606] [19.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.011] [bmv2] [D] [thread 4606] [19.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.011] [bmv2] [D] [thread 4609] [19.0] [cxt 0] Transmitting packet of size 208 out of port 1
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Processing packet received on port 1
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Parser 'parser': start
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.018] [bmv2] [T] [thread 4604] [20.0] [cxt 0] Bytes parsed: 0
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Parser 'parser': end
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.018] [bmv2] [T] [thread 4604] [20.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:56.018] [bmv2] [T] [thread 4604] [20.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.018] [bmv2] [T] [thread 4604] [20.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.018] [bmv2] [D] [thread 4604] [20.0] [cxt 0] Egress port is 2
+[07:35:56.018] [bmv2] [D] [thread 4607] [20.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.019] [bmv2] [D] [thread 4607] [20.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.019] [bmv2] [D] [thread 4607] [20.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.019] [bmv2] [D] [thread 4607] [20.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.019] [bmv2] [D] [thread 4609] [20.0] [cxt 0] Transmitting packet of size 208 out of port 2
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Processing packet received on port 1
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Parser 'parser': start
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.218] [bmv2] [T] [thread 4604] [21.0] [cxt 0] Bytes parsed: 0
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Parser 'parser': end
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.218] [bmv2] [T] [thread 4604] [21.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:56.218] [bmv2] [T] [thread 4604] [21.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.218] [bmv2] [T] [thread 4604] [21.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.218] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.219] [bmv2] [D] [thread 4604] [21.0] [cxt 0] Egress port is 2
+[07:35:56.219] [bmv2] [D] [thread 4607] [21.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.219] [bmv2] [D] [thread 4607] [21.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.219] [bmv2] [D] [thread 4607] [21.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.219] [bmv2] [D] [thread 4607] [21.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.219] [bmv2] [D] [thread 4609] [21.0] [cxt 0] Transmitting packet of size 196 out of port 2
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Processing packet received on port 2
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Parser 'parser': start
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.260] [bmv2] [T] [thread 4604] [22.0] [cxt 0] Bytes parsed: 0
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Parser 'parser': end
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.260] [bmv2] [T] [thread 4604] [22.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:56.260] [bmv2] [T] [thread 4604] [22.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.260] [bmv2] [T] [thread 4604] [22.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.260] [bmv2] [D] [thread 4604] [22.0] [cxt 0] Egress port is 1
+[07:35:56.260] [bmv2] [D] [thread 4606] [22.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.260] [bmv2] [D] [thread 4606] [22.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.260] [bmv2] [D] [thread 4606] [22.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.260] [bmv2] [D] [thread 4606] [22.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.260] [bmv2] [D] [thread 4609] [22.0] [cxt 0] Transmitting packet of size 208 out of port 1
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Processing packet received on port 1
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Parser 'parser': start
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.320] [bmv2] [T] [thread 4604] [23.0] [cxt 0] Bytes parsed: 0
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Parser 'parser': end
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.320] [bmv2] [T] [thread 4604] [23.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:56.320] [bmv2] [T] [thread 4604] [23.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.320] [bmv2] [T] [thread 4604] [23.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.320] [bmv2] [D] [thread 4604] [23.0] [cxt 0] Egress port is 2
+[07:35:56.320] [bmv2] [D] [thread 4607] [23.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.320] [bmv2] [D] [thread 4607] [23.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.320] [bmv2] [D] [thread 4607] [23.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.320] [bmv2] [D] [thread 4607] [23.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.320] [bmv2] [D] [thread 4609] [23.0] [cxt 0] Transmitting packet of size 107 out of port 2
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Processing packet received on port 2
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Parser 'parser': start
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.463] [bmv2] [T] [thread 4604] [24.0] [cxt 0] Bytes parsed: 0
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Parser 'parser': end
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.463] [bmv2] [T] [thread 4604] [24.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:56.463] [bmv2] [T] [thread 4604] [24.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.463] [bmv2] [T] [thread 4604] [24.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.463] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.464] [bmv2] [D] [thread 4604] [24.0] [cxt 0] Egress port is 1
+[07:35:56.464] [bmv2] [D] [thread 4606] [24.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.464] [bmv2] [D] [thread 4606] [24.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.464] [bmv2] [D] [thread 4606] [24.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.464] [bmv2] [D] [thread 4606] [24.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.464] [bmv2] [D] [thread 4609] [24.0] [cxt 0] Transmitting packet of size 196 out of port 1
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Processing packet received on port 2
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Parser 'parser': start
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:56.561] [bmv2] [T] [thread 4604] [25.0] [cxt 0] Bytes parsed: 0
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Parser 'parser': end
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Pipeline 'ingress': start
+[07:35:56.561] [bmv2] [T] [thread 4604] [25.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:56.561] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:56.562] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:56.562] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:56.562] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:56.562] [bmv2] [T] [thread 4604] [25.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:56.562] [bmv2] [T] [thread 4604] [25.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:56.562] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Pipeline 'ingress': end
+[07:35:56.562] [bmv2] [D] [thread 4604] [25.0] [cxt 0] Egress port is 1
+[07:35:56.562] [bmv2] [D] [thread 4606] [25.0] [cxt 0] Pipeline 'egress': start
+[07:35:56.562] [bmv2] [D] [thread 4606] [25.0] [cxt 0] Pipeline 'egress': end
+[07:35:56.562] [bmv2] [D] [thread 4606] [25.0] [cxt 0] Deparser 'deparser': start
+[07:35:56.562] [bmv2] [D] [thread 4606] [25.0] [cxt 0] Deparser 'deparser': end
+[07:35:56.562] [bmv2] [D] [thread 4609] [25.0] [cxt 0] Transmitting packet of size 107 out of port 1
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Processing packet received on port 1
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Parser 'parser': start
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:57.459] [bmv2] [T] [thread 4604] [26.0] [cxt 0] Bytes parsed: 0
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Parser 'parser': end
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Pipeline 'ingress': start
+[07:35:57.459] [bmv2] [T] [thread 4604] [26.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:57.459] [bmv2] [T] [thread 4604] [26.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:57.459] [bmv2] [T] [thread 4604] [26.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Pipeline 'ingress': end
+[07:35:57.459] [bmv2] [D] [thread 4604] [26.0] [cxt 0] Egress port is 2
+[07:35:57.459] [bmv2] [D] [thread 4607] [26.0] [cxt 0] Pipeline 'egress': start
+[07:35:57.459] [bmv2] [D] [thread 4607] [26.0] [cxt 0] Pipeline 'egress': end
+[07:35:57.459] [bmv2] [D] [thread 4607] [26.0] [cxt 0] Deparser 'deparser': start
+[07:35:57.459] [bmv2] [D] [thread 4607] [26.0] [cxt 0] Deparser 'deparser': end
+[07:35:57.459] [bmv2] [D] [thread 4609] [26.0] [cxt 0] Transmitting packet of size 196 out of port 2
+[07:35:57.699] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Processing packet received on port 2
+[07:35:57.699] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Parser 'parser': start
+[07:35:57.699] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:57.699] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:57.699] [bmv2] [T] [thread 4604] [27.0] [cxt 0] Bytes parsed: 0
+[07:35:57.699] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Parser 'parser': end
+[07:35:57.699] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Pipeline 'ingress': start
+[07:35:57.699] [bmv2] [T] [thread 4604] [27.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:57.700] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:57.700] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:57.700] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:57.700] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:57.700] [bmv2] [T] [thread 4604] [27.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:57.700] [bmv2] [T] [thread 4604] [27.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:57.700] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Pipeline 'ingress': end
+[07:35:57.700] [bmv2] [D] [thread 4604] [27.0] [cxt 0] Egress port is 1
+[07:35:57.700] [bmv2] [D] [thread 4606] [27.0] [cxt 0] Pipeline 'egress': start
+[07:35:57.700] [bmv2] [D] [thread 4606] [27.0] [cxt 0] Pipeline 'egress': end
+[07:35:57.700] [bmv2] [D] [thread 4606] [27.0] [cxt 0] Deparser 'deparser': start
+[07:35:57.700] [bmv2] [D] [thread 4606] [27.0] [cxt 0] Deparser 'deparser': end
+[07:35:57.700] [bmv2] [D] [thread 4609] [27.0] [cxt 0] Transmitting packet of size 196 out of port 1
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Processing packet received on port 1
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Parser 'parser': start
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:58.322] [bmv2] [T] [thread 4604] [28.0] [cxt 0] Bytes parsed: 0
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Parser 'parser': end
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Pipeline 'ingress': start
+[07:35:58.322] [bmv2] [T] [thread 4604] [28.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:58.322] [bmv2] [T] [thread 4604] [28.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:58.322] [bmv2] [T] [thread 4604] [28.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Pipeline 'ingress': end
+[07:35:58.322] [bmv2] [D] [thread 4604] [28.0] [cxt 0] Egress port is 2
+[07:35:58.322] [bmv2] [D] [thread 4607] [28.0] [cxt 0] Pipeline 'egress': start
+[07:35:58.323] [bmv2] [D] [thread 4607] [28.0] [cxt 0] Pipeline 'egress': end
+[07:35:58.323] [bmv2] [D] [thread 4607] [28.0] [cxt 0] Deparser 'deparser': start
+[07:35:58.323] [bmv2] [D] [thread 4607] [28.0] [cxt 0] Deparser 'deparser': end
+[07:35:58.323] [bmv2] [D] [thread 4609] [28.0] [cxt 0] Transmitting packet of size 107 out of port 2
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Processing packet received on port 2
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Parser 'parser': start
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:58.562] [bmv2] [T] [thread 4604] [29.0] [cxt 0] Bytes parsed: 0
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Parser 'parser': end
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Pipeline 'ingress': start
+[07:35:58.562] [bmv2] [T] [thread 4604] [29.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:58.562] [bmv2] [T] [thread 4604] [29.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:58.562] [bmv2] [T] [thread 4604] [29.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Pipeline 'ingress': end
+[07:35:58.562] [bmv2] [D] [thread 4604] [29.0] [cxt 0] Egress port is 1
+[07:35:58.562] [bmv2] [D] [thread 4606] [29.0] [cxt 0] Pipeline 'egress': start
+[07:35:58.562] [bmv2] [D] [thread 4606] [29.0] [cxt 0] Pipeline 'egress': end
+[07:35:58.562] [bmv2] [D] [thread 4606] [29.0] [cxt 0] Deparser 'deparser': start
+[07:35:58.562] [bmv2] [D] [thread 4606] [29.0] [cxt 0] Deparser 'deparser': end
+[07:35:58.562] [bmv2] [D] [thread 4609] [29.0] [cxt 0] Transmitting packet of size 107 out of port 1
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Processing packet received on port 1
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Parser 'parser': start
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.073] [bmv2] [T] [thread 4604] [30.0] [cxt 0] Bytes parsed: 0
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Parser 'parser': end
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.073] [bmv2] [T] [thread 4604] [30.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:59.073] [bmv2] [T] [thread 4604] [30.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.073] [bmv2] [T] [thread 4604] [30.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.073] [bmv2] [D] [thread 4604] [30.0] [cxt 0] Egress port is 2
+[07:35:59.073] [bmv2] [D] [thread 4607] [30.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.073] [bmv2] [D] [thread 4607] [30.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.073] [bmv2] [D] [thread 4607] [30.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.074] [bmv2] [D] [thread 4607] [30.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.074] [bmv2] [D] [thread 4609] [30.0] [cxt 0] Transmitting packet of size 42 out of port 2
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Processing packet received on port 2
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Parser 'parser': start
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.074] [bmv2] [T] [thread 4604] [31.0] [cxt 0] Bytes parsed: 0
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Parser 'parser': end
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.074] [bmv2] [T] [thread 4604] [31.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:59.074] [bmv2] [T] [thread 4604] [31.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.074] [bmv2] [T] [thread 4604] [31.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.074] [bmv2] [D] [thread 4604] [31.0] [cxt 0] Egress port is 1
+[07:35:59.074] [bmv2] [D] [thread 4606] [31.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.074] [bmv2] [D] [thread 4606] [31.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.074] [bmv2] [D] [thread 4606] [31.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.074] [bmv2] [D] [thread 4606] [31.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.074] [bmv2] [D] [thread 4609] [31.0] [cxt 0] Transmitting packet of size 42 out of port 1
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Processing packet received on port 1
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Parser 'parser': start
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.074] [bmv2] [T] [thread 4604] [32.0] [cxt 0] Bytes parsed: 0
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Parser 'parser': end
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.074] [bmv2] [T] [thread 4604] [32.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:59.074] [bmv2] [T] [thread 4604] [32.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.074] [bmv2] [T] [thread 4604] [32.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.074] [bmv2] [D] [thread 4604] [32.0] [cxt 0] Egress port is 2
+[07:35:59.074] [bmv2] [D] [thread 4607] [32.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.074] [bmv2] [D] [thread 4607] [32.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.074] [bmv2] [D] [thread 4607] [32.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.074] [bmv2] [D] [thread 4607] [32.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.074] [bmv2] [D] [thread 4609] [32.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Processing packet received on port 2
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Parser 'parser': start
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.074] [bmv2] [T] [thread 4604] [33.0] [cxt 0] Bytes parsed: 0
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Parser 'parser': end
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.074] [bmv2] [T] [thread 4604] [33.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:59.074] [bmv2] [T] [thread 4604] [33.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.074] [bmv2] [T] [thread 4604] [33.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.074] [bmv2] [D] [thread 4604] [33.0] [cxt 0] Egress port is 1
+[07:35:59.074] [bmv2] [D] [thread 4606] [33.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.074] [bmv2] [D] [thread 4606] [33.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.074] [bmv2] [D] [thread 4606] [33.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.074] [bmv2] [D] [thread 4606] [33.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.074] [bmv2] [D] [thread 4609] [33.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Processing packet received on port 1
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Parser 'parser': start
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.224] [bmv2] [T] [thread 4604] [34.0] [cxt 0] Bytes parsed: 0
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Parser 'parser': end
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.224] [bmv2] [T] [thread 4604] [34.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.224] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:59.225] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:59.225] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:59.225] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:59.225] [bmv2] [T] [thread 4604] [34.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.225] [bmv2] [T] [thread 4604] [34.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.225] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.225] [bmv2] [D] [thread 4604] [34.0] [cxt 0] Egress port is 2
+[07:35:59.225] [bmv2] [D] [thread 4607] [34.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.225] [bmv2] [D] [thread 4607] [34.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.225] [bmv2] [D] [thread 4607] [34.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.225] [bmv2] [D] [thread 4607] [34.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.225] [bmv2] [D] [thread 4609] [34.0] [cxt 0] Transmitting packet of size 70 out of port 2
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Processing packet received on port 2
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Parser 'parser': start
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.463] [bmv2] [T] [thread 4604] [35.0] [cxt 0] Bytes parsed: 0
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Parser 'parser': end
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.463] [bmv2] [T] [thread 4604] [35.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:59.463] [bmv2] [T] [thread 4604] [35.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.463] [bmv2] [T] [thread 4604] [35.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.463] [bmv2] [D] [thread 4604] [35.0] [cxt 0] Egress port is 1
+[07:35:59.464] [bmv2] [D] [thread 4606] [35.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.464] [bmv2] [D] [thread 4606] [35.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.464] [bmv2] [D] [thread 4606] [35.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.464] [bmv2] [D] [thread 4606] [35.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.464] [bmv2] [D] [thread 4609] [35.0] [cxt 0] Transmitting packet of size 70 out of port 1
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Processing packet received on port 1
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Parser 'parser': start
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.699] [bmv2] [T] [thread 4604] [36.0] [cxt 0] Bytes parsed: 0
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Parser 'parser': end
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.699] [bmv2] [T] [thread 4604] [36.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:35:59.699] [bmv2] [T] [thread 4604] [36.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.699] [bmv2] [T] [thread 4604] [36.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.699] [bmv2] [D] [thread 4604] [36.0] [cxt 0] Egress port is 2
+[07:35:59.699] [bmv2] [D] [thread 4607] [36.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.699] [bmv2] [D] [thread 4607] [36.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.699] [bmv2] [D] [thread 4607] [36.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.699] [bmv2] [D] [thread 4607] [36.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.699] [bmv2] [D] [thread 4609] [36.0] [cxt 0] Transmitting packet of size 196 out of port 2
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Processing packet received on port 2
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Parser 'parser': start
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:35:59.940] [bmv2] [T] [thread 4604] [37.0] [cxt 0] Bytes parsed: 0
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Parser 'parser': end
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Pipeline 'ingress': start
+[07:35:59.940] [bmv2] [T] [thread 4604] [37.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:35:59.940] [bmv2] [T] [thread 4604] [37.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:35:59.940] [bmv2] [T] [thread 4604] [37.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Pipeline 'ingress': end
+[07:35:59.940] [bmv2] [D] [thread 4604] [37.0] [cxt 0] Egress port is 1
+[07:35:59.941] [bmv2] [D] [thread 4606] [37.0] [cxt 0] Pipeline 'egress': start
+[07:35:59.941] [bmv2] [D] [thread 4606] [37.0] [cxt 0] Pipeline 'egress': end
+[07:35:59.941] [bmv2] [D] [thread 4606] [37.0] [cxt 0] Deparser 'deparser': start
+[07:35:59.941] [bmv2] [D] [thread 4606] [37.0] [cxt 0] Deparser 'deparser': end
+[07:35:59.941] [bmv2] [D] [thread 4609] [37.0] [cxt 0] Transmitting packet of size 196 out of port 1
+[07:36:00.076] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Processing packet received on port 1
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Parser 'parser': start
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:00.077] [bmv2] [T] [thread 4604] [38.0] [cxt 0] Bytes parsed: 0
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Parser 'parser': end
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Pipeline 'ingress': start
+[07:36:00.077] [bmv2] [T] [thread 4604] [38.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:00.077] [bmv2] [T] [thread 4604] [38.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:00.077] [bmv2] [T] [thread 4604] [38.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Pipeline 'ingress': end
+[07:36:00.077] [bmv2] [D] [thread 4604] [38.0] [cxt 0] Egress port is 2
+[07:36:00.078] [bmv2] [D] [thread 4607] [38.0] [cxt 0] Pipeline 'egress': start
+[07:36:00.078] [bmv2] [D] [thread 4607] [38.0] [cxt 0] Pipeline 'egress': end
+[07:36:00.078] [bmv2] [D] [thread 4607] [38.0] [cxt 0] Deparser 'deparser': start
+[07:36:00.078] [bmv2] [D] [thread 4607] [38.0] [cxt 0] Deparser 'deparser': end
+[07:36:00.078] [bmv2] [D] [thread 4609] [38.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[07:36:00.078] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Processing packet received on port 2
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Parser 'parser': start
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:00.079] [bmv2] [T] [thread 4604] [39.0] [cxt 0] Bytes parsed: 0
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Parser 'parser': end
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Pipeline 'ingress': start
+[07:36:00.079] [bmv2] [T] [thread 4604] [39.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:00.079] [bmv2] [T] [thread 4604] [39.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:00.079] [bmv2] [T] [thread 4604] [39.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Pipeline 'ingress': end
+[07:36:00.079] [bmv2] [D] [thread 4604] [39.0] [cxt 0] Egress port is 1
+[07:36:00.079] [bmv2] [D] [thread 4606] [39.0] [cxt 0] Pipeline 'egress': start
+[07:36:00.079] [bmv2] [D] [thread 4606] [39.0] [cxt 0] Pipeline 'egress': end
+[07:36:00.079] [bmv2] [D] [thread 4606] [39.0] [cxt 0] Deparser 'deparser': start
+[07:36:00.079] [bmv2] [D] [thread 4606] [39.0] [cxt 0] Deparser 'deparser': end
+[07:36:00.079] [bmv2] [D] [thread 4609] [39.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Processing packet received on port 1
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Parser 'parser': start
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:01.079] [bmv2] [T] [thread 4604] [40.0] [cxt 0] Bytes parsed: 0
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Parser 'parser': end
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Pipeline 'ingress': start
+[07:36:01.079] [bmv2] [T] [thread 4604] [40.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:01.079] [bmv2] [T] [thread 4604] [40.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:01.079] [bmv2] [T] [thread 4604] [40.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Pipeline 'ingress': end
+[07:36:01.079] [bmv2] [D] [thread 4604] [40.0] [cxt 0] Egress port is 2
+[07:36:01.079] [bmv2] [D] [thread 4607] [40.0] [cxt 0] Pipeline 'egress': start
+[07:36:01.079] [bmv2] [D] [thread 4607] [40.0] [cxt 0] Pipeline 'egress': end
+[07:36:01.079] [bmv2] [D] [thread 4607] [40.0] [cxt 0] Deparser 'deparser': start
+[07:36:01.079] [bmv2] [D] [thread 4607] [40.0] [cxt 0] Deparser 'deparser': end
+[07:36:01.080] [bmv2] [D] [thread 4609] [40.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Processing packet received on port 2
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Parser 'parser': start
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:01.080] [bmv2] [T] [thread 4604] [41.0] [cxt 0] Bytes parsed: 0
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Parser 'parser': end
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Pipeline 'ingress': start
+[07:36:01.080] [bmv2] [T] [thread 4604] [41.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:01.080] [bmv2] [T] [thread 4604] [41.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:01.080] [bmv2] [T] [thread 4604] [41.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:01.080] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Pipeline 'ingress': end
+[07:36:01.081] [bmv2] [D] [thread 4604] [41.0] [cxt 0] Egress port is 1
+[07:36:01.081] [bmv2] [D] [thread 4606] [41.0] [cxt 0] Pipeline 'egress': start
+[07:36:01.081] [bmv2] [D] [thread 4606] [41.0] [cxt 0] Pipeline 'egress': end
+[07:36:01.081] [bmv2] [D] [thread 4606] [41.0] [cxt 0] Deparser 'deparser': start
+[07:36:01.081] [bmv2] [D] [thread 4606] [41.0] [cxt 0] Deparser 'deparser': end
+[07:36:01.081] [bmv2] [D] [thread 4609] [41.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Processing packet received on port 1
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Parser 'parser': start
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:02.080] [bmv2] [T] [thread 4604] [42.0] [cxt 0] Bytes parsed: 0
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Parser 'parser': end
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Pipeline 'ingress': start
+[07:36:02.080] [bmv2] [T] [thread 4604] [42.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:02.080] [bmv2] [T] [thread 4604] [42.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:02.080] [bmv2] [T] [thread 4604] [42.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Pipeline 'ingress': end
+[07:36:02.080] [bmv2] [D] [thread 4604] [42.0] [cxt 0] Egress port is 2
+[07:36:02.080] [bmv2] [D] [thread 4607] [42.0] [cxt 0] Pipeline 'egress': start
+[07:36:02.080] [bmv2] [D] [thread 4607] [42.0] [cxt 0] Pipeline 'egress': end
+[07:36:02.080] [bmv2] [D] [thread 4607] [42.0] [cxt 0] Deparser 'deparser': start
+[07:36:02.080] [bmv2] [D] [thread 4607] [42.0] [cxt 0] Deparser 'deparser': end
+[07:36:02.080] [bmv2] [D] [thread 4609] [42.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Processing packet received on port 2
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Parser 'parser': start
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:02.081] [bmv2] [T] [thread 4604] [43.0] [cxt 0] Bytes parsed: 0
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Parser 'parser': end
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Pipeline 'ingress': start
+[07:36:02.081] [bmv2] [T] [thread 4604] [43.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:02.081] [bmv2] [T] [thread 4604] [43.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:02.081] [bmv2] [T] [thread 4604] [43.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Pipeline 'ingress': end
+[07:36:02.081] [bmv2] [D] [thread 4604] [43.0] [cxt 0] Egress port is 1
+[07:36:02.081] [bmv2] [D] [thread 4606] [43.0] [cxt 0] Pipeline 'egress': start
+[07:36:02.081] [bmv2] [D] [thread 4606] [43.0] [cxt 0] Pipeline 'egress': end
+[07:36:02.082] [bmv2] [D] [thread 4606] [43.0] [cxt 0] Deparser 'deparser': start
+[07:36:02.082] [bmv2] [D] [thread 4606] [43.0] [cxt 0] Deparser 'deparser': end
+[07:36:02.082] [bmv2] [D] [thread 4609] [43.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[07:36:02.331] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Processing packet received on port 1
+[07:36:02.331] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Parser 'parser': start
+[07:36:02.331] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:02.331] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:02.331] [bmv2] [T] [thread 4604] [44.0] [cxt 0] Bytes parsed: 0
+[07:36:02.331] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Parser 'parser': end
+[07:36:02.331] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Pipeline 'ingress': start
+[07:36:02.331] [bmv2] [T] [thread 4604] [44.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:02.332] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:02.332] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:02.332] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:02.332] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:02.332] [bmv2] [T] [thread 4604] [44.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:02.332] [bmv2] [T] [thread 4604] [44.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:02.332] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Pipeline 'ingress': end
+[07:36:02.332] [bmv2] [D] [thread 4604] [44.0] [cxt 0] Egress port is 2
+[07:36:02.332] [bmv2] [D] [thread 4607] [44.0] [cxt 0] Pipeline 'egress': start
+[07:36:02.332] [bmv2] [D] [thread 4607] [44.0] [cxt 0] Pipeline 'egress': end
+[07:36:02.332] [bmv2] [D] [thread 4607] [44.0] [cxt 0] Deparser 'deparser': start
+[07:36:02.332] [bmv2] [D] [thread 4607] [44.0] [cxt 0] Deparser 'deparser': end
+[07:36:02.332] [bmv2] [D] [thread 4609] [44.0] [cxt 0] Transmitting packet of size 107 out of port 2
+[07:36:02.586] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Processing packet received on port 2
+[07:36:02.586] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Parser 'parser': start
+[07:36:02.586] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:02.586] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:02.586] [bmv2] [T] [thread 4604] [45.0] [cxt 0] Bytes parsed: 0
+[07:36:02.586] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Parser 'parser': end
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Pipeline 'ingress': start
+[07:36:02.587] [bmv2] [T] [thread 4604] [45.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:02.587] [bmv2] [T] [thread 4604] [45.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:02.587] [bmv2] [T] [thread 4604] [45.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Pipeline 'ingress': end
+[07:36:02.587] [bmv2] [D] [thread 4604] [45.0] [cxt 0] Egress port is 1
+[07:36:02.587] [bmv2] [D] [thread 4606] [45.0] [cxt 0] Pipeline 'egress': start
+[07:36:02.587] [bmv2] [D] [thread 4606] [45.0] [cxt 0] Pipeline 'egress': end
+[07:36:02.587] [bmv2] [D] [thread 4606] [45.0] [cxt 0] Deparser 'deparser': start
+[07:36:02.587] [bmv2] [D] [thread 4606] [45.0] [cxt 0] Deparser 'deparser': end
+[07:36:02.587] [bmv2] [D] [thread 4609] [45.0] [cxt 0] Transmitting packet of size 107 out of port 1
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Processing packet received on port 1
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Parser 'parser': start
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:03.080] [bmv2] [T] [thread 4604] [46.0] [cxt 0] Bytes parsed: 0
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Parser 'parser': end
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Pipeline 'ingress': start
+[07:36:03.080] [bmv2] [T] [thread 4604] [46.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:03.080] [bmv2] [T] [thread 4604] [46.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:03.080] [bmv2] [T] [thread 4604] [46.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Pipeline 'ingress': end
+[07:36:03.080] [bmv2] [D] [thread 4604] [46.0] [cxt 0] Egress port is 2
+[07:36:03.080] [bmv2] [D] [thread 4607] [46.0] [cxt 0] Pipeline 'egress': start
+[07:36:03.080] [bmv2] [D] [thread 4607] [46.0] [cxt 0] Pipeline 'egress': end
+[07:36:03.081] [bmv2] [D] [thread 4607] [46.0] [cxt 0] Deparser 'deparser': start
+[07:36:03.081] [bmv2] [D] [thread 4607] [46.0] [cxt 0] Deparser 'deparser': end
+[07:36:03.081] [bmv2] [D] [thread 4609] [46.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Processing packet received on port 2
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Parser 'parser': start
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:03.081] [bmv2] [T] [thread 4604] [47.0] [cxt 0] Bytes parsed: 0
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Parser 'parser': end
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Pipeline 'ingress': start
+[07:36:03.081] [bmv2] [T] [thread 4604] [47.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:03.081] [bmv2] [T] [thread 4604] [47.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:03.081] [bmv2] [T] [thread 4604] [47.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Pipeline 'ingress': end
+[07:36:03.081] [bmv2] [D] [thread 4604] [47.0] [cxt 0] Egress port is 1
+[07:36:03.081] [bmv2] [D] [thread 4606] [47.0] [cxt 0] Pipeline 'egress': start
+[07:36:03.081] [bmv2] [D] [thread 4606] [47.0] [cxt 0] Pipeline 'egress': end
+[07:36:03.081] [bmv2] [D] [thread 4606] [47.0] [cxt 0] Deparser 'deparser': start
+[07:36:03.081] [bmv2] [D] [thread 4606] [47.0] [cxt 0] Deparser 'deparser': end
+[07:36:03.081] [bmv2] [D] [thread 4609] [47.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Processing packet received on port 1
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Parser 'parser': start
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:03.240] [bmv2] [T] [thread 4604] [48.0] [cxt 0] Bytes parsed: 0
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Parser 'parser': end
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Pipeline 'ingress': start
+[07:36:03.240] [bmv2] [T] [thread 4604] [48.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:03.240] [bmv2] [T] [thread 4604] [48.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:03.240] [bmv2] [T] [thread 4604] [48.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:03.240] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Pipeline 'ingress': end
+[07:36:03.241] [bmv2] [D] [thread 4604] [48.0] [cxt 0] Egress port is 2
+[07:36:03.241] [bmv2] [D] [thread 4607] [48.0] [cxt 0] Pipeline 'egress': start
+[07:36:03.241] [bmv2] [D] [thread 4607] [48.0] [cxt 0] Pipeline 'egress': end
+[07:36:03.241] [bmv2] [D] [thread 4607] [48.0] [cxt 0] Deparser 'deparser': start
+[07:36:03.241] [bmv2] [D] [thread 4607] [48.0] [cxt 0] Deparser 'deparser': end
+[07:36:03.241] [bmv2] [D] [thread 4609] [48.0] [cxt 0] Transmitting packet of size 70 out of port 2
+[07:36:03.475] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Processing packet received on port 2
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Parser 'parser': start
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:03.476] [bmv2] [T] [thread 4604] [49.0] [cxt 0] Bytes parsed: 0
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Parser 'parser': end
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Pipeline 'ingress': start
+[07:36:03.476] [bmv2] [T] [thread 4604] [49.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:03.476] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:03.476] [bmv2] [T] [thread 4604] [49.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:03.477] [bmv2] [T] [thread 4604] [49.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:03.477] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Pipeline 'ingress': end
+[07:36:03.477] [bmv2] [D] [thread 4604] [49.0] [cxt 0] Egress port is 1
+[07:36:03.477] [bmv2] [D] [thread 4606] [49.0] [cxt 0] Pipeline 'egress': start
+[07:36:03.477] [bmv2] [D] [thread 4606] [49.0] [cxt 0] Pipeline 'egress': end
+[07:36:03.477] [bmv2] [D] [thread 4606] [49.0] [cxt 0] Deparser 'deparser': start
+[07:36:03.477] [bmv2] [D] [thread 4606] [49.0] [cxt 0] Deparser 'deparser': end
+[07:36:03.477] [bmv2] [D] [thread 4609] [49.0] [cxt 0] Transmitting packet of size 70 out of port 1
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Processing packet received on port 2
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Parser 'parser': start
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:04.087] [bmv2] [T] [thread 4604] [50.0] [cxt 0] Bytes parsed: 0
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Parser 'parser': end
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Pipeline 'ingress': start
+[07:36:04.087] [bmv2] [T] [thread 4604] [50.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:04.087] [bmv2] [T] [thread 4604] [50.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:04.087] [bmv2] [T] [thread 4604] [50.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Pipeline 'ingress': end
+[07:36:04.087] [bmv2] [D] [thread 4604] [50.0] [cxt 0] Egress port is 1
+[07:36:04.087] [bmv2] [D] [thread 4606] [50.0] [cxt 0] Pipeline 'egress': start
+[07:36:04.087] [bmv2] [D] [thread 4606] [50.0] [cxt 0] Pipeline 'egress': end
+[07:36:04.087] [bmv2] [D] [thread 4606] [50.0] [cxt 0] Deparser 'deparser': start
+[07:36:04.087] [bmv2] [D] [thread 4606] [50.0] [cxt 0] Deparser 'deparser': end
+[07:36:04.087] [bmv2] [D] [thread 4609] [50.0] [cxt 0] Transmitting packet of size 42 out of port 1
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Processing packet received on port 1
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Parser 'parser': start
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:04.087] [bmv2] [T] [thread 4604] [51.0] [cxt 0] Bytes parsed: 0
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Parser 'parser': end
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Pipeline 'ingress': start
+[07:36:04.087] [bmv2] [T] [thread 4604] [51.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:04.087] [bmv2] [T] [thread 4604] [51.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:04.087] [bmv2] [T] [thread 4604] [51.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Pipeline 'ingress': end
+[07:36:04.087] [bmv2] [D] [thread 4604] [51.0] [cxt 0] Egress port is 2
+[07:36:04.087] [bmv2] [D] [thread 4607] [51.0] [cxt 0] Pipeline 'egress': start
+[07:36:04.087] [bmv2] [D] [thread 4607] [51.0] [cxt 0] Pipeline 'egress': end
+[07:36:04.087] [bmv2] [D] [thread 4607] [51.0] [cxt 0] Deparser 'deparser': start
+[07:36:04.087] [bmv2] [D] [thread 4607] [51.0] [cxt 0] Deparser 'deparser': end
+[07:36:04.087] [bmv2] [D] [thread 4609] [51.0] [cxt 0] Transmitting packet of size 42 out of port 2
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Processing packet received on port 1
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Parser 'parser': start
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:10.346] [bmv2] [T] [thread 4604] [52.0] [cxt 0] Bytes parsed: 0
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Parser 'parser': end
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Pipeline 'ingress': start
+[07:36:10.346] [bmv2] [T] [thread 4604] [52.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:10.346] [bmv2] [T] [thread 4604] [52.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:10.346] [bmv2] [T] [thread 4604] [52.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:10.346] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Pipeline 'ingress': end
+[07:36:10.347] [bmv2] [D] [thread 4604] [52.0] [cxt 0] Egress port is 2
+[07:36:10.347] [bmv2] [D] [thread 4607] [52.0] [cxt 0] Pipeline 'egress': start
+[07:36:10.347] [bmv2] [D] [thread 4607] [52.0] [cxt 0] Pipeline 'egress': end
+[07:36:10.347] [bmv2] [D] [thread 4607] [52.0] [cxt 0] Deparser 'deparser': start
+[07:36:10.347] [bmv2] [D] [thread 4607] [52.0] [cxt 0] Deparser 'deparser': end
+[07:36:10.347] [bmv2] [D] [thread 4609] [52.0] [cxt 0] Transmitting packet of size 107 out of port 2
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Processing packet received on port 2
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Parser 'parser': start
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:10.581] [bmv2] [T] [thread 4604] [53.0] [cxt 0] Bytes parsed: 0
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Parser 'parser': end
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Pipeline 'ingress': start
+[07:36:10.581] [bmv2] [T] [thread 4604] [53.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:10.581] [bmv2] [T] [thread 4604] [53.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:10.581] [bmv2] [T] [thread 4604] [53.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Pipeline 'ingress': end
+[07:36:10.581] [bmv2] [D] [thread 4604] [53.0] [cxt 0] Egress port is 1
+[07:36:10.582] [bmv2] [D] [thread 4606] [53.0] [cxt 0] Pipeline 'egress': start
+[07:36:10.582] [bmv2] [D] [thread 4606] [53.0] [cxt 0] Pipeline 'egress': end
+[07:36:10.582] [bmv2] [D] [thread 4606] [53.0] [cxt 0] Deparser 'deparser': start
+[07:36:10.582] [bmv2] [D] [thread 4606] [53.0] [cxt 0] Deparser 'deparser': end
+[07:36:10.582] [bmv2] [D] [thread 4609] [53.0] [cxt 0] Transmitting packet of size 107 out of port 1
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Processing packet received on port 1
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Parser 'parser': start
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:26.348] [bmv2] [T] [thread 4604] [54.0] [cxt 0] Bytes parsed: 0
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Parser 'parser': end
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Pipeline 'ingress': start
+[07:36:26.348] [bmv2] [T] [thread 4604] [54.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:26.348] [bmv2] [T] [thread 4604] [54.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:26.348] [bmv2] [T] [thread 4604] [54.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Pipeline 'ingress': end
+[07:36:26.348] [bmv2] [D] [thread 4604] [54.0] [cxt 0] Egress port is 2
+[07:36:26.348] [bmv2] [D] [thread 4607] [54.0] [cxt 0] Pipeline 'egress': start
+[07:36:26.348] [bmv2] [D] [thread 4607] [54.0] [cxt 0] Pipeline 'egress': end
+[07:36:26.348] [bmv2] [D] [thread 4607] [54.0] [cxt 0] Deparser 'deparser': start
+[07:36:26.348] [bmv2] [D] [thread 4607] [54.0] [cxt 0] Deparser 'deparser': end
+[07:36:26.349] [bmv2] [D] [thread 4609] [54.0] [cxt 0] Transmitting packet of size 107 out of port 2
+[07:36:26.586] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Processing packet received on port 2
+[07:36:26.586] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Parser 'parser': start
+[07:36:26.586] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:26.586] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:26.586] [bmv2] [T] [thread 4604] [55.0] [cxt 0] Bytes parsed: 0
+[07:36:26.586] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Parser 'parser': end
+[07:36:26.586] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Pipeline 'ingress': start
+[07:36:26.586] [bmv2] [T] [thread 4604] [55.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:26.587] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:26.587] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:26.587] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:26.587] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:26.587] [bmv2] [T] [thread 4604] [55.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:26.587] [bmv2] [T] [thread 4604] [55.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:26.587] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Pipeline 'ingress': end
+[07:36:26.587] [bmv2] [D] [thread 4604] [55.0] [cxt 0] Egress port is 1
+[07:36:26.587] [bmv2] [D] [thread 4606] [55.0] [cxt 0] Pipeline 'egress': start
+[07:36:26.587] [bmv2] [D] [thread 4606] [55.0] [cxt 0] Pipeline 'egress': end
+[07:36:26.587] [bmv2] [D] [thread 4606] [55.0] [cxt 0] Deparser 'deparser': start
+[07:36:26.587] [bmv2] [D] [thread 4606] [55.0] [cxt 0] Deparser 'deparser': end
+[07:36:26.587] [bmv2] [D] [thread 4609] [55.0] [cxt 0] Transmitting packet of size 107 out of port 1
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Processing packet received on port 1
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Parser 'parser': start
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:58.364] [bmv2] [T] [thread 4604] [56.0] [cxt 0] Bytes parsed: 0
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Parser 'parser': end
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Pipeline 'ingress': start
+[07:36:58.364] [bmv2] [T] [thread 4604] [56.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Table 'MyIngress.forward': hit with handle 0
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_egress_spec - 2,
+
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 2,
+[07:36:58.364] [bmv2] [T] [thread 4604] [56.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:58.364] [bmv2] [T] [thread 4604] [56.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Pipeline 'ingress': end
+[07:36:58.364] [bmv2] [D] [thread 4604] [56.0] [cxt 0] Egress port is 2
+[07:36:58.364] [bmv2] [D] [thread 4607] [56.0] [cxt 0] Pipeline 'egress': start
+[07:36:58.364] [bmv2] [D] [thread 4607] [56.0] [cxt 0] Pipeline 'egress': end
+[07:36:58.364] [bmv2] [D] [thread 4607] [56.0] [cxt 0] Deparser 'deparser': start
+[07:36:58.364] [bmv2] [D] [thread 4607] [56.0] [cxt 0] Deparser 'deparser': end
+[07:36:58.364] [bmv2] [D] [thread 4609] [56.0] [cxt 0] Transmitting packet of size 107 out of port 2
+[07:36:58.583] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Processing packet received on port 2
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Parser 'parser': start
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Parser 'parser' entering state 'start'
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[07:36:58.584] [bmv2] [T] [thread 4604] [57.0] [cxt 0] Bytes parsed: 0
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Parser 'parser': end
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Pipeline 'ingress': start
+[07:36:58.584] [bmv2] [T] [thread 4604] [57.0] [cxt 0] Applying table 'MyIngress.forward'
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Table 'MyIngress.forward': hit with handle 1
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Dumping entry 1
+Match key:
+* standard_metadata.ingress_port: EXACT     0002
+Action entry: MyIngress.set_egress_spec - 1,
+
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Action entry is MyIngress.set_egress_spec - 1,
+[07:36:58.584] [bmv2] [T] [thread 4604] [57.0] [cxt 0] Action MyIngress.set_egress_spec
+[07:36:58.584] [bmv2] [T] [thread 4604] [57.0] [cxt 0] static_forwarder_table.p4(32) Primitive standard_metadata.egress_spec = port
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Pipeline 'ingress': end
+[07:36:58.584] [bmv2] [D] [thread 4604] [57.0] [cxt 0] Egress port is 1
+[07:36:58.584] [bmv2] [D] [thread 4606] [57.0] [cxt 0] Pipeline 'egress': start
+[07:36:58.584] [bmv2] [D] [thread 4606] [57.0] [cxt 0] Pipeline 'egress': end
+[07:36:58.584] [bmv2] [D] [thread 4606] [57.0] [cxt 0] Deparser 'deparser': start
+[07:36:58.584] [bmv2] [D] [thread 4606] [57.0] [cxt 0] Deparser 'deparser': end
+[07:36:58.584] [bmv2] [D] [thread 4609] [57.0] [cxt 0] Transmitting packet of size 107 out of port 1
