@@ -1,0 +1,25 @@
+{
+  "target": "bmv2",
+  "p4info": "build/static_forwarder_table.p4info",
+  "bmv2_json": "build/static_forwarder_table.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.forward",
+      "default_action": true,
+      "action_name": "MyIngress.drop",
+      "action_params": {}
+    },
+    {
+      "table": "MyIngress.forward",
+      "match": { "standard_metadata.ingress_port": 1 },
+      "action_name": "MyIngress.set_egress_spec",
+      "action_params": { "port": 2 }
+    },
+    {
+      "table": "MyIngress.forward",
+      "match": { "standard_metadata.ingress_port": 2 },
+      "action_name": "MyIngress.set_egress_spec",
+      "action_params": { "port": 1 }
+    }
+  ]
+}

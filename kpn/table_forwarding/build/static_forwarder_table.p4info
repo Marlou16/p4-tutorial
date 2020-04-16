@@ -1,0 +1,49 @@
+tables {
+  preamble {
+    id: 33615889
+    name: "MyIngress.forward"
+    alias: "forward"
+  }
+  match_fields {
+    id: 1
+    name: "standard_metadata.ingress_port"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 16820738
+  }
+  action_refs {
+    id: 16805608
+  }
+  action_refs {
+    id: 16800567
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 16800567
+    name: "NoAction"
+    alias: "NoAction"
+  }
+}
+actions {
+  preamble {
+    id: 16805608
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 16820738
+    name: "MyIngress.set_egress_spec"
+    alias: "set_egress_spec"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+}

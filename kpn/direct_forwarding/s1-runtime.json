@@ -1,0 +1,5 @@
+{
+  "target": "bmv2",
+  "p4info": "build/static_forwarder.p4info",
+  "bmv2_json": "build/static_forwarder.json"
+}
